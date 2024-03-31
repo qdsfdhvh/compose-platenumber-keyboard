@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.jetbrains.compose)
 }
 
 android {
@@ -33,6 +32,12 @@ android {
     kotlin {
         jvmToolchain(11)
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
+    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -44,10 +49,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
 
-    implementation(compose.foundation)
-    implementation(compose.ui)
-    implementation(compose.material3)
-    implementation(compose.preview)
+    implementation(libs.androidx.foundation)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.material3)
+    debugImplementation(libs.androidx.ui.tooling.preview)
 
     implementation(project(":keyboard"))
 
