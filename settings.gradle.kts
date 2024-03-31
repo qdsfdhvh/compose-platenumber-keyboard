@@ -19,6 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PlateNumberKeyboard"
+rootProject.name = "compose-platenumber-keyboard"
+
 include(":app")
- 
+include(":keyboard")

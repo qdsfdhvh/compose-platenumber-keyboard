@@ -1,4 +1,4 @@
-package com.seiko.platenumberkeyboard
+package com.seiko.platenumberkeyboard.demo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.seiko.platenumberkeyboard.ui.theme.PlateNumberKeyboardTheme
+import com.seiko.platenumberkeyboard.demo.theme.PlateNumberKeyboardTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

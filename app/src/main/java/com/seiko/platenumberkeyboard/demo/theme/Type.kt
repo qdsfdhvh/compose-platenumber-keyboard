@@ -1,4 +1,4 @@
-package com.seiko.platenumberkeyboard.ui.theme
+package com.seiko.platenumberkeyboard.demo.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
